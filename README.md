@@ -2,6 +2,7 @@
 # Guia de como ejecutar el preyecto 
 Iniciar proyecto
 (Utilizar azle 0.22.0)
+npm i
 npm install react-bootstrap bootstrap
 npm install react-router-dom
 npm install @dfinity/authentication
