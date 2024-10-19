@@ -1,4 +1,16 @@
 # `TNT3`
+# Guia de como ejecutar el preyecto 
+Iniciar proyecto
+(Utilizar azle 0.22.0)
+npm install react-bootstrap bootstrap
+npm install react-router-dom
+npm install @dfinity/authentication
+npm install react-leaflet leaflet
+npm install react-bootstrap bootstrap
+npm i --save-dev @types/leaflet
+ npm install react-leaflet leaflet leaflet-routing-machine
+npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
+npm install react-icons
 
 Welcome to your new `TNT3` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
