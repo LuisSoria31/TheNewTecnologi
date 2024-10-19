@@ -1,0 +1,50 @@
+{
+  "canisters": {
+    "TNT3_backend": {
+      "build": "npx azle TNT3_backend",
+      "candid": "src/TNT3_backend/TNT3_backend.did",
+      "gzip": true,
+      "main": "src/TNT3_backend/src/index.ts",
+      "tech_stack": {
+        "cdk": {
+          "azle": {}
+        },
+        "language": {
+          "javascript": {},
+          "typescript": {}
+        }
+      },
+      "type": "custom",
+      "wasm": ".azle/TNT3_backend/TNT3_backend.wasm"
+    },
+    "TNT3_frontend": {
+      "dependencies": [
+        "TNT3_backend"
+      ],
+      "source": [
+        "src/TNT3_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "TNT3_frontend"
+    },
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
